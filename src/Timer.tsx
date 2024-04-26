@@ -1,3 +1,4 @@
+import { count } from 'console';
 import React from 'react';
 import { useState,useEffect } from 'react';
 
@@ -26,19 +27,23 @@ const Timer = () => {
   
 
   useEffect(() => {
-    if(start){ 
-        console.log("useeffect")
-        const interval = setInterval(() => getTime(), 1000);
+    if(start==1){ 
+        console.log("useeffect at ",countdown)
+        console.log("waiting for ",countdown+3)
+        const interval = setInterval(() => {          
+          getTime()}, 3000);
         return () => clearInterval(interval);      
     }
     else 
-    return 
+    return ()=>{
+      console.log("ended ")
+    }
    
   });
 
   return (
     <div className="timer">
-       Current-: {countdown}
+       {start} Current-: {countdown} 
        <button onClick={startCountdown}>start</button>
        <button onClick={resetCountdown}>reset</button>
     </div>
