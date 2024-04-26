@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Timer from './Timer';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
+          <Timer></Timer>
+
         </p>
         <a
           className="App-link"
