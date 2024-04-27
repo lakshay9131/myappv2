@@ -1,0 +1,67 @@
+/* App.css */
+.App {
+    text-align: center;
+  }
+  
+  /* UmbrellaCustomizer.css */
+  .customizer {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+  }
+  
+  .umbrella-container {
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+  }
+  .umbrella{
+    display: flex;
+    width: 400px;
+  }
+  .color-swatches {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+ 
+  .pink{
+    background-color: pink;
+  }
+  .yellow{
+    background-color: yellow;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+
+
+  .swatch.selected {
+    border-color: #ffffff; /* Adjust the color as needed */
+  }
+  
+  .swatch:hover {
+    transform: scale(1.1);
+  }
+  
+  .logo-preview {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+  }
+  
