@@ -2,21 +2,11 @@ import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import UmbrellaCustomizer from './UmbrellaCustomizer';
+import { Color } from './interfaces';
 
-interface BackgroundColor
-  {
-    [key: string]: string;
-  }
 
-interface Color
-  {
-    [key: string]: {
-      background:string,
-      file:string
-    }
-    
-  }
 
+const startColor="pink";
 const color :Color={
 
     'pink':{
@@ -26,23 +16,19 @@ const color :Color={
       ,
     "yellow":{
       background:"#F6f181",
-      file:require('./images/blue_umbrella.png')
+      file:require('./images/yellow_umbrella.png')
     },
     "blue":{
       background:'#e5f5fe',
-      file:require('./images/yellow_umbrella.png')
+      file:require('./images/blue_umbrella.png')
     },
     }
 
-const backgroundColor :BackgroundColor={
-'pink':"#fee1f1",
-"yellow":"#F6f181",
-"blue":'#e5f5fe',
-}
+
 
 
 const App: React.FC = () => {
-  const startColor="pink";
+ 
   const startBackground=color[startColor].background
   const [appBackgroundColor, setAppBackgroundColor] = useState<string>(startBackground);
  
