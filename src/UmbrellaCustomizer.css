@@ -22,8 +22,10 @@
   }
   .color-swatches {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    text-align: start;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .swatch {

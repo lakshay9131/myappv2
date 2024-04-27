@@ -48,17 +48,34 @@ const UmbrellaCustomizer: React.FC <Props>  = (Props) => {
           />
         )}
       </div>
-      <div className="color-swatches">
-        {Object.keys(Props.colorProperties).map((color) => (
-          <button
-            key={color}
-            className={`swatch ${color} ${selectedButton === color ? 'selected' : ''}`}
-            onClick={() => handleColorChange(color)}
-          ></button>
-        ))}
+      <div className="color-swatches">        
+        
+         
+        
+        <div className="customization-section">
+          <h1>Custom Umbrella</h1>
+          <div className="color-swatches">
+          {Object.keys(Props.colorProperties).map((color) => (
+            <button
+              key={color}
+              className={`swatch ${color} ${selectedButton === color ? 'selected' : ''}`}
+              onClick={() => handleColorChange(color)}
+            ></button>
+          ))}
+          </div>
+
+          
+          <p><strong>Customise Your Umbrella</strong><br></br>Upload Logo for instance</p>
+          <p><small>.png and .jpg file only.Max size 5MB</small></p>
+          
+          
+          <input type="file" id="logo-input" accept="image/*" onChange={handleLogoUpload} />
+        </div>
+        </div>
+        
         {/* Add more color swatches as needed */}
-      </div>
-      <input type="file" id="logo-input" accept="image/*" onChange={handleLogoUpload} />
+      
+      {/* <input type="file" id="logo-input" accept="image/*" onChange={handleLogoUpload} /> */}
     </div>
   );
 };
