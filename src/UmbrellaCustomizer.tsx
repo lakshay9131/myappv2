@@ -13,10 +13,12 @@ interface Props {
 const UmbrellaCustomizer: React.FC <Props>  = (Props) => {
   const [umbrellaColor, setUmbrellaColor] = useState<string>(Props.defaultColor);
   const [logoPreview, setLogoPreview] = useState<string | null>(null);
+  const [selectedButton, setSelectedButton] = useState<string>(Props.defaultColor);
 
   const handleColorChange = (color: string) => {
     setUmbrellaColor(color);
     Props.onColorChange(color);
+    setSelectedButton(color)
   };
 
   const handleLogoUpload = (event: ChangeEvent<HTMLInputElement>) => {
@@ -50,7 +52,7 @@ const UmbrellaCustomizer: React.FC <Props>  = (Props) => {
         {Object.keys(Props.colorProperties).map((color) => (
           <button
             key={color}
-            className={`swatch ${color}`}
+            className={`swatch ${color} ${selectedButton === color ? 'selected' : ''}`}
             onClick={() => handleColorChange(color)}
           ></button>
         ))}

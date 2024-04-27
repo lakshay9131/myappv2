@@ -59,9 +59,9 @@
   
   .logo-preview {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 100%;
+    width: 100px;
   }
   
