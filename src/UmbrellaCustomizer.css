@@ -102,4 +102,29 @@
   .upload-button:hover {
     background-color: #2980b9;
   }
-  
+
+  .spinner-path {
+    animation: spin 2s linear infinite; /* Animation definition */
+  }
+  @keyframes spin {
+   
+      0% {
+        transform: rotate(0deg); /* Starting position, no rotation */
+      }
+      90% {
+        transform: rotate(360deg); /* Quickly rotate to 360 degrees */
+      }
+      100% {
+        transform: rotate(360deg); /* Hold the rotation at 360 degrees */
+      }
+      
+    
+  }
+  .loading-spinner{
+    width: 30px;
+    height: 30px;
+  }
+  .uploadsvg{
+    width: 20px;
+    height: 20px;
+  }
