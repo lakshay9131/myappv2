@@ -2,6 +2,9 @@
 .App {
     text-align: center;
   }
+  h1{
+    font-size: 44px;
+  }
   
   /* UmbrellaCustomizer.css */
   .customizer {
@@ -9,9 +12,17 @@
     flex-direction:row; */
     align-items: center;
     display: grid;
-    grid-template-columns: 50% 50%; /* Two equal columns */
-    grid-gap: 10px; 
+    grid-template-columns: 46% 46%; /* Two equal columns */
+    grid-gap: 50px; 
     min-height: 500px;
+  }
+
+  .customization-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;  
+    width: 100%;
   }
   
   .umbrella-container {
@@ -33,6 +44,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 100%;
+    width: auto;
   }
   
   .swatch {
