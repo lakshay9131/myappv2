@@ -66,4 +66,35 @@
     transform: translateX(-50%);
     width: 100px;
   }
+ 
+  
+  .verticalalign{
+    vertical-align: middle; /* Align text vertically with the SVG */
+  }
+  
+  .upload-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  
+  .upload-input {
+    display: none;
+  }
+  
+  .upload-button {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+  
+  .upload-button:hover {
+    background-color: #2980b9;
+  }
   
