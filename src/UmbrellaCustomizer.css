@@ -5,20 +5,24 @@
   
   /* UmbrellaCustomizer.css */
   .customizer {
-    display: flex;
-    flex-direction:row;
+    /* display: flex;
+    flex-direction:row; */
     align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%; /* Two equal columns */
+    grid-gap: 10px; 
   }
   
   .umbrella-container {
     position: relative;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     display: flex;
   }
   .umbrella{
     display: flex;
-    width: 400px;
+    width: 100%;
+    max-width: 550px;
   }
   .color-swatches {
     display: flex;
@@ -26,6 +30,7 @@
     text-align: start;
     margin-top: 20px;
     margin-bottom: 20px;
+    max-width: 100%;
   }
   
   .swatch {
