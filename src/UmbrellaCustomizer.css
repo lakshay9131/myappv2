@@ -11,13 +11,15 @@
     display: grid;
     grid-template-columns: 50% 50%; /* Two equal columns */
     grid-gap: 10px; 
+    min-height: 500px;
   }
   
   .umbrella-container {
     position: relative;
     width: 100%;
-    justify-content: center;
+    justify-content: center;    
     display: flex;
+    max-width: 550px;
   }
   .umbrella{
     display: flex;
@@ -121,8 +123,8 @@
     
   }
   .loading-spinner{
-    width: 30px;
-    height: 30px;
+    width: 90px;
+    height: 90px;
   }
   .uploadsvg{
     width: 20px;
