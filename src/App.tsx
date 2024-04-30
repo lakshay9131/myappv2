@@ -11,15 +11,18 @@ const color :Color={
 
     'pink':{
       background:"#fee1f1",
+      color : "#D9328B",
       file:require('./images/pink_umbrella.png')
     }
       ,
     "yellow":{
       background:"#F6f181",
+      color : "#FED143",
       file:require('./images/yellow_umbrella.png')
     },
     "blue":{
       background:'#e5f5fe',
+      color:"#2FB4E5",
       file:require('./images/blue_umbrella.png')
     },
     }

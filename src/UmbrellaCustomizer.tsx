@@ -121,7 +121,8 @@ const UmbrellaCustomizer: React.FC <Props>  = (Props) => {
           {Object.keys(Props.colorProperties).map((color) => (
             <button
               key={color}
-              className={`swatch ${color} ${selectedButton === color ? 'selected' : ''}`}
+              style={{backgroundColor:Props.colorProperties[color].color}}
+              className={`swatch ${selectedButton === color ? 'selected' : ''}`}
               onClick={() => handleColorChange(color)}
             ></button>
           ))}
@@ -134,7 +135,7 @@ const UmbrellaCustomizer: React.FC <Props>  = (Props) => {
           
           <div className="upload-container">
             <input type="file" style={{visibility:"hidden"}} id="upload" className="upload-input" onInput={handleLogoUpload}/>            
-            <label htmlFor="upload" className="upload-button verticalalign">
+            <label htmlFor="upload"  style={{backgroundColor:Props.colorProperties[umbrellaColor].color}} className="upload-button verticalalign" >
 
 
               <svg

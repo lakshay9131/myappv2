@@ -3,6 +3,7 @@
     text-align: center;
   }
   h1{
+    max-width: 100%;
     font-size: 44px;
   }
   
@@ -59,14 +60,14 @@
   
  
   .pink{
-    background-color: pink;
+    background-color: #D9328B;
   }
   .yellow{
-    background-color: yellow;
+    background-color: #FED143;
   }
   
   .blue {
-    background-color: blue;
+    background-color: #2FB4E5;
   }
 
 
@@ -95,6 +96,7 @@
     position: relative;
     display: flex;
     width: 100%;
+    max-width: 350px;
   }
   
   .upload-input {

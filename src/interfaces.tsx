@@ -2,7 +2,8 @@ export interface Color
   {
     [key: string]: {
       background:string,
-      file:string
+      file:string,
+      color:string
     }
     
   }
