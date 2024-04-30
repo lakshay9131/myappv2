@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import UmbrellaCustomizer from './UmbrellaCustomizer';
-import { Color } from './interfaces';
+import UmbrellaCustomizer from './components/UmbrellaCustomizer';
+import { Color } from './utility/interfaces';
 
 
 

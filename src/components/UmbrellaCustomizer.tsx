@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent } from 'react';
 import './UmbrellaCustomizer.css';
-import { Color } from './interfaces';
+import { Color } from '../utility/interfaces';
 import { inherits } from 'util';
 
 
