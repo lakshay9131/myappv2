@@ -144,3 +144,9 @@
     width: 20px;
     height: 20px;
   }
+  .close-button
+  {
+    background-color: transparent;
+    border: 0px;
+    color:white
+  }
